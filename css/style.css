@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-dark-color: #101214;
+  --secondary-dark-color: #161a1d;
+  --tartiary-dark-color: #333;
+}
+.fa-brands:before,
+.fa-regular:before,
+.fa-solid:before,
+.fa:before,
+.fab:before,
+.far:before,
+.fas:before {
+  content: "";
+}
+body {
+  font-family: "Karla", serif;
+  background-color: var(--main-dark-color);
+  color: #f1f1f1;
+}
+.form-control {
+  background-color: var(--tartiary-dark-color);
+  color: #f1f1f1;
+  border: none;
+  font-family: var(--bs-font-sans-serif);
+}
+form label {
+  font-family: var(--bs-font-sans-serif);
+  color: #f1f1f1 !important;
+  font-weight: 700;
+}
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-control:focus ~ label::after {
+  background-color: transparent;
+}
+::placeholder {
+  color: #f1f1f1;
+}
+input[type="search"]::placeholder {
+  color: #f1f1f1;
+  font-size: larger;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: var(--tartiary-dark-color);
+  color: #f1f1f1;
+}
+.inner {
+  background-color: var(--secondary-dark-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+.inner img {
+  height: 150px;
+  object-fit: contain;
+}
+.error {
+  font-size: 14;
+  color: red;
+  margin-top: 10px;
+}
+.error::before {
+  content: "* ";
+}
